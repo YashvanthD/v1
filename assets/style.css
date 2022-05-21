@@ -1,0 +1,9 @@
+button {
+    width: 150px;
+    height: 30;
+    margin: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #d6d6d6;
+}

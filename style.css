@@ -1,0 +1,220 @@
+    body {
+        font-family: "Lato", sans-serif;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+        top: 90px;
+        left: 0;
+        background-color: #263238;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    
+    title {
+        color: #251a1a;
+    }
+    
+    a {
+        text-decoration: unset;
+    }
+    
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        display: block;
+    }
+    
+    .sidenav a:hover {
+        color: #974838;
+    }
+    
+    .main {
+        margin-left: 19%;
+        width: 78%;
+        /* Same as the width of the sidenav */
+        /* font-size: 10px; Increased text to enable scrolling */
+        /* padding: 0px 15px; */
+        padding: 0 25px;
+    }
+    
+    table {
+        padding: 15px;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+    
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .top-container {
+        background-color: #f1f1f1;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .header {
+        padding: 10px 16px;
+        background: #555;
+        color: white;
+        width: 100%;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    .stick {
+        position: fixed;
+    }
+    
+    .sticky+.content {
+        padding-top: 102px;
+    }
+    
+    body {
+        font-family: "Lato", sans-serif;
+    }
+    
+    .tablink {
+        background-color: #555;
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 100%;
+    }
+    
+    .tablink:hover {
+        background-color: #777;
+    }
+    /* Style the tab content */
+    
+    .tabcontent {
+        color: black;
+        display: none;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #London {
+        height: 100%;
+        background-color: red;
+    }
+    
+    #Paris {
+        height: 100%;
+        background-color: green;
+    }
+    
+    #Tokyo {
+        height: 100%;
+        background-color: blue;
+    }
+    
+    #Oslo {
+        background-color: orange;
+        height: 100%;
+    }
+    
+    #tumkur {
+        color: black;
+        height: 100%;
+        background-color: red;
+    }
+    
+    h2 {
+        align-items: center;
+    }
+    
+    h2.header {
+        color: white;
+    }
+    
+    tr:nth-child() {
+        background-color: #251a1a;
+    }
+    
+    .sticky-25 {
+        position: fixed;
+    }
+    
+    .sticky-100 {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+    
+    .left {
+        float: left;
+    }
+    
+    .m-10 {
+        margin: 10px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f5f5f5f8;
+    }
+    
+    td {
+        padding: 5px;
+    }
+    
+    thead {
+        border-top: #251a1a solid 1px;
+        border-bottom: #251a1a solid 1px;
+    }
+    
+    .form-control {
+        display: block;
+        width: 300px;
+        height: 34px;
+        font-size: 16px;
+        font-weight: 4000;
+        line-height: 1.5;
+        color: rgb(73, 80, 87);
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        padding: 0.375rem 0.75rem;
+        border-image: initial;
+    }
+    
+    input[type="date"],
+    input[type="time"],
+    input[type="text"],
+    input[type="submit"] {
+        width: 250px;
+        height: 25px;
+        background-color: rgba(255, 255, 255, 0.774);
+    }
+    
+    input[type="date"],
+    input[type="time"] {
+        border-top: unset;
+        border-left: unset;
+        border-right: unset;
+    }
