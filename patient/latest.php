@@ -129,6 +129,7 @@ else{
         
     ?>
     <center>
+    <button style="float: right;width:70px;padding:13px;margin-right:30px;"><a target="_blank" href="/hospital/E-Hospital-Management/data/reportPatient.php?rid=<?php echo $rid; ?>">print</a></button>
     
     <table>
         <tr><td>Request ID</td><td><?php echo $rid;?></td></tr>
@@ -170,10 +171,10 @@ if ($errorr) {
 ?>
 <hr><br>
 <center><h2>Latest Predicted Diabetes Reports </h2></center>
-
+<button style="float: right;width:70px;padding:13px;margin-right:30px;"><a target="_blank" href="/hospital/E-Hospital-Management/data/diabetesReport.php?aadhar=<?php echo $paadhar; ?>">print</a></button>
     <table>
         <tr>
-        <td>Col No</td>
+        <td>Sl No</td>
         <td>Aadhar</td>
         <td>Date and Time</td>
         <td>Number of Pregnencies</td>
@@ -184,6 +185,7 @@ if ($errorr) {
         <td>BMI</td>
         <td>Pedigree Function</td>
         <td>age</td>
+        <td>Result</td>
     </tr>
     <tr>
        

@@ -158,7 +158,7 @@ if($Nrow==0 || $Nrow=='0'){
 </h3>
 
 <center>
-
+<button style="float: right;width:70px;padding:13px;margin-right:30px;"><a target="_blank" href="/hospital/E-Hospital-Management/data/reportPatient.php?rid=<?php echo $rid; ?>">print</a></button>
 <table>
     <tr><td>Request ID</td><td><?php echo $rid;?></td></tr>
 

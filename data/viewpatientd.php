@@ -257,7 +257,7 @@ include 'loadpatientreq.php';
             echo $table;
             ?>
         </div>
-        <div style="margin-left: 10%;height:30%; overflow:auto;">
+        <div style="margin-left: 20%;height:30%; overflow:auto;">
             <?php
             $paadhar = $_SESSION['paadhar'];
             include '../data/diabeteslist.php';

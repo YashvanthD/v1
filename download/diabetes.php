@@ -3,11 +3,7 @@
 require("../assets/conn.php");
 
 // get Users
-$query = "SELECT * FROM reqapp r
-join patient p on p.id= r.pid
-join doctor d on d.did=r.did
-order by r.reqid;
-";
+$query = "SELECT * FROM diabetes_sym";
 if (!$result = mysqli_query($conn, $query)) {
     exit(mysqli_error($conn));
 }
@@ -20,7 +16,7 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 header('Content-Type: csv; charset=utf-8');
-header('Content-Disposition: attachment; filename=appointments.csv');
+header('Content-Disposition: attachment; filename=diabetes.csv');
 $output = fopen('php://output', 'w');
 fputcsv($output, array_keys($row));
 

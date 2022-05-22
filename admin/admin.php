@@ -251,6 +251,8 @@ echo $table;
 
 <a href="../download/patient.php"><button  id="down" styele="border:unset;">Patient Data base</button></a>
 <a href="../download/doctor.php"><button  id="down" styele="border:unset;">Doctor Data base</button></a>
+<a href="../download/diabetes.php"><button  id="down" styele="border:unset;">Diabetes Data base</button></a>
+<a href="../download/appointments.php"><button  id="down" styele="border:unset;">All appointments Data base</button></a>
 
 </div>
 

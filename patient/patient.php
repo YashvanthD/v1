@@ -79,6 +79,7 @@ if (!isset($_SESSION['patient'])) {
               <input class="form-check-input" type="checkbox" onchange="addrowdb()" id="flexSwitchCheckDefault">
               <label class="form-check-label" for="mySwitch" style="float:left">Save </label>
             </div> -->
+            <h2>Machine Learning</h2>
             <hr>
             <iframe src="https://d237-3-23-94-58.ngrok.io/" style="width:100%;height:40rem;"></iframe>
           </center>
