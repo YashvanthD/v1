@@ -1,6 +1,10 @@
 {
         "name": "admin/ise",
     "description": "SIT ISE",
+  "type": "component",
+  "keywords": ["javascript", "library", "grid", "browser", "dom", "layout", "outlayer"],
+  "homepage": "https://yashvanthd.github.io/v1/",
+  "license": "MIT",
     "autoload": {
         "psr-4": {
             "Admin\\Ise\\": "src/"
