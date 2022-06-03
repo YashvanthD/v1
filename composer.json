@@ -72,6 +72,6 @@
         "drupal/entity_browser": "dev-1.x",
         "drupal/dropzonejs": "dev-1.x",
         "enyo/dropzone": "4.2.0",
-        "admin/ise": "1.0.0",
+        "admin/ise": "1.0.0"
     }
 }
