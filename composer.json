@@ -71,10 +71,5 @@
     },
     "require": {
         "composer/installers": "^1.0.20",
-        "drupal/file_browser": "dev-1.x",
-        "drupal/entity_embed": "dev-1.x",
-        "drupal/entity_browser": "dev-1.x",
-        "drupal/dropzonejs": "dev-1.x",
-        "enyo/dropzone": "4.2.0"
-    }
+     }
 }
