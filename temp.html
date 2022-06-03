@@ -1,0 +1,77 @@
+
+<?php
+error_reporting(0);
+?>
+<?php
+  $msg = "";
+  
+  // If upload button is clicked ...
+  if (isset($_POST['upload'])) {
+    echo 'Uploading...if';
+    $filename = $_FILES["uploadfile"]["name"];
+    $tempname = $_FILES["uploadfile"]["tmp_name"];    
+        $folder = "image/".$filename;
+          echo $_FILES["uploadfile"]["name"];
+          echo $_FILES["uploadfile"]["tmp_name"];  
+    // $db = mysqli_connect("localhost", "root", "", "files");
+  
+    //     // Get all the submitted data from the form
+    //     $sql = "CREATE TABLE IF NOT EXISTS files(
+    //       subject varchar(30),
+    //       filename varchar(100),
+    //       fileid int
+    //     )";
+    //     $sql = "INSERT INTO image (filename) VALUES ('$filename')";
+  
+    //     // Execute query
+    //     mysqli_query($db, $sql);
+          
+        // Now let's move the uploaded image into the folder: image
+        if (move_uploaded_file($tempname, $folder))  {
+            $msg = "Image uploaded successfully";
+        }else{
+            $msg = "Failed to upload image";
+      }
+  }
+  $result = mysqli_query($db, "SELECT * FROM image");
+  echo 'Uploading...';
+
+
+  
+  header( 'Content-type: application/pdf' );
+
+  // Send the file to the browser.
+
+  readfile($folder);
+
+
+  if (file_exists($dest_file)) {
+    print "The file name already exists!!";
+  }
+  else {
+    move_uploaded_file( $source_file, $dest_file )
+    or die ("Error!!");
+    if($_FILES['pdfFile']['error'] == 0) {
+      print "Pdf file uploaded successfully!";
+      print "<b><u>Details : </u></b><br/>";
+      print "File Name : ".$_FILES['pdfFile']['name']."<br.>"."<br/>";
+      print "File Size : ".$_FILES['pdfFile']['size']." bytes"."<br/>";
+      print "File location : upload/".$_FILES['pdfFile']['name']."<br/>";
+    }
+  }
+}
+else {
+  if ( $_FILES['pdfFile']['type'] != "application/pdf") {
+    print "Error occured while uploading file : ".$_FILES['pdfFile']['name']."<br/>";
+    print "Invalid  file extension, should be pdf !!"."<br/>";
+    print "Error Code : ".$_FILES['pdfFile']['error']."<br/>";
+  }
+}
+?>
+
+<style>
+  h1{
+
+    color: rgba(46, 12, 12, 0.76);
+  }
+</style>

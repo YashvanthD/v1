@@ -1,0 +1,16 @@
+{
+    "name": "admin/ise",
+    "description": "SIT ISE",
+    "autoload": {
+        "psr-4": {
+            "Admin\\Ise\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "YashvanthD",
+            "email": "yashvanthsira@gmail.com"
+        }
+    ],
+    "require": {}
+}
