@@ -17,10 +17,7 @@
         }
     ],
     "repositories": [
-        {
-            "type": "composer",
-            "url":  "https://packages.drupal.org/8"
-        },
+     
         {
             "type": "package",
             "package": {
@@ -30,46 +27,12 @@
                 "dist": {
                     "url": "https://github.com/YashvanthD/v1/archive/refs/tags/release-1.0.0.zip",
                     "type": "zip"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                 "name": "admin/ise",
-                "version": "1.0.0",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/YashvanthD/v1/archive/refs/tags/release-1.0.0.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "enyo/dropzone",
-                "version": "4.2.0",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/enyo/dropzone",
-                    "type": "git",
-                    "reference": "origin/master"
                 }
             }
         }
+       
     ],
-    "extra": {
-        "installer-paths": {
-            "libraries/{$name}": [
-                "type:drupal-library"
-            ],
-            "modules/contrib/{$name}": [
-                "type:drupal-module"
-            ]
-        }
-    },
-    "require": {
+       "require": {
         "composer/installers": "^1.0.20"
      }
 }
