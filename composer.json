@@ -20,8 +20,8 @@
         {
             "type": "package",
             "package": {
-                "name": "desandro/masonry",
-                "version": "3.3.1",
+                 "name": "admin/ise",
+                "version": "1.0.0",
                 "type": "drupal-library",
                 "dist": {
                     "url": "https://github.com/YashvanthD/v1/archive/refs/tags/release-1.0.0.zip",
@@ -32,8 +32,8 @@
         {
             "type": "package",
             "package": {
-                "name": "desandro/imagesloaded",
-                "version": "3.1.8",
+                 "name": "admin/ise",
+                "version": "1.0.0",
                 "type": "drupal-library",
                 "dist": {
                     "url": "https://github.com/YashvanthD/v1/archive/refs/tags/release-1.0.0.zip",
@@ -72,7 +72,6 @@
         "drupal/entity_browser": "dev-1.x",
         "drupal/dropzonejs": "dev-1.x",
         "enyo/dropzone": "4.2.0",
-        "desandro/masonry": "3.3.1",
-        "desandro/imagesloaded": "3.1.8"
+        "admin/ise": "1.0.0",
     }
 }
